@@ -2,6 +2,6 @@
 using namespace std;
 
 int main(){
-    cout << "Day-1";
+    cout << "Day-1" ;
     return 0;
 }

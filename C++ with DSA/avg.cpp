@@ -7,7 +7,7 @@ int main(){
     cout << "Enter obtained marks for physics, chemistry and maths: \n";
     cin >> phy >> chem >> maths;
 
-    int avg = (phy+chem+maths) / 3;
+    int avg = (phy+chem+maths)/ 3;
 
     cout << "The average marks of 3 subjects is: \n" << avg << endl;
     return 0;

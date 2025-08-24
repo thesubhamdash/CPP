@@ -7,10 +7,8 @@ int main(){
     cin >> n;
 
     for(i=0; i<n; i++){
-        int num = 1;
-        for(j=0; j<i+1; j++){
-            cout << num << " ";
-            num++;
+        for(j=1; j<=i+1; j++){
+            cout << j << " ";
         }
         cout << endl;
     }

@@ -36,9 +36,9 @@ int main(){
         cout << "*";
         // inner spaces
         if(i!=n-1){
-            // for(j=; j<; j++){
-            //     cout << " ";
-            // }
+            for(j=1; j<n; j++){
+                cout << " ";
+            }
             cout << "*";
         }
         cout << endl;

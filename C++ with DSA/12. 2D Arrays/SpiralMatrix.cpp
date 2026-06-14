@@ -18,7 +18,7 @@ void spiralMatrix(int mat[][4], int n, int m){
 
         //bottom
         for(int j=ecol-1; j>=scol; j--){
-            if(srow == erow){
+            if(srow == erow){   // middle part(row) to avoid duplicacy
                 break;
             }
             cout << mat[erow][j] << " ";
@@ -26,7 +26,7 @@ void spiralMatrix(int mat[][4], int n, int m){
 
         //left
         for(int i=erow-1; i>=srow+1; i--){
-            if(scol == ecol){
+            if(scol == ecol){   // middle part(column) to avoid duplicacy
                 break;
             }
             cout << mat[i][scol] << " ";

@@ -4,7 +4,7 @@ using namespace std;
 bool sortedmatrix(int mat[][4], int n, int m, int key){
     int i=n-1, j=0, steps=0;
 
-    while(i<n && j>=0){
+    while(j<m && i>=0){
         if(mat[i][j] == key){
             cout << "Key found at (" << i << "," << j << ")" << endl;
             cout << "steps= " << steps;

@@ -9,10 +9,22 @@ void toUpper(char word[]) {
     }
 }
 
+void toLower(char word[]) {
+    for (int i = 0; word[i] != '\0'; i++) {
+        if (word[i] >= 'A' && word[i] <= 'Z') {
+            word[i] = word[i] - 'A' + 'a';
+        }
+    }
+}
+
 int main(){
     char word[] = "ApPle";
-    toUpper(word);
+    cout << word << endl;
 
+    toUpper(word);
+    cout << word << endl;
+
+    toLower(word);
     cout << word << endl;
     return 0;
 }

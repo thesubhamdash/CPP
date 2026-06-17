@@ -11,15 +11,17 @@ bool isValidAnagram(string str1, string str2){
     }
 
     for(char ch: str1){
-        count[ch - 'a']++;
+        int idx = ch - 'a';
+        count[idx]++;
     }
 
     for(char ch:str2){
-        if(count[ch - 'a'] == 0){
+        int idx = ch - 'a';
+        if(count[idx] == 0){
             cout << "Not valid anagrams!" << endl;
             return false;
         }
-        count[ch - 'a']--;
+        count[idx]--;
     }
 
     cout << "Valid Anagrams!" << endl;

@@ -25,6 +25,14 @@ class car{
         *mileage = *og.mileage;     // Copies the original value to the newly allocated memory 
 
     }
+
+    ~car(){
+        cout << "Freed up allocated memory\n";
+        if(mileage != NULL){
+            delete mileage;
+            mileage = NULL;     // Doing null so removes the garbage value
+        }
+    }
 };
 
 

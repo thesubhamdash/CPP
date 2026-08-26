@@ -5,9 +5,7 @@ int ApowB(int a, int b){    //O(n)
     if(b == 0){
         return 1;
     }
-    int ans=1*a;
-    ans *= ApowB(a,b-1);
-    return ans;
+    return a * ApowB(a,b-1);
 }
 
 int XpowN(int x, int n){    //O(logn)

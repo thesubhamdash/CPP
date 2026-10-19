@@ -42,6 +42,7 @@ class List{
                 tail = head = newNode;
             } else {
                 newNode->next = head;
+                head = newNode;
             }
         }
 
